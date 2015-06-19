@@ -143,8 +143,7 @@ int main(void) {
                 CM_AppendData(&packet, CM_VALUE_0, ADCValues[0]);
                 CM_AppendData(&packet, CM_VALUE_1, ADCValues[1]);
                 CM_AppendData(&packet, CM_VALUE_2, ADCValues[2]);
-                CM_AppendData(&packet, CM_VALUE_3, ADCValues[3]);                 
-
+                CM_AppendData(&packet, CM_VALUE_3, ADCValues[3]);             
 
 		//Write to VCP                
                 CDC_Transmit_FS(bufferPtr, sizeof(packet));
